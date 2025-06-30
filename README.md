@@ -1,39 +1,33 @@
 # finaltask5
----
 
-## 📓 notebooks/Titanic_EDA.ipynb (Core Code Example)
 
-Here is a simplified version of your notebook code:
+This project contains Titanic dataset analysis done for Task 5 of the Elevate Labs Internship.
 
-```python
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
+## 📁 Project Structure
 
-# Load dataset
-df = pd.read_csv('../data/titanic.csv')
+- data/ – Titanic dataset CSV file.
+- notebooks/ – Python Jupyter notebook for analysis.
+- exports/ – Exported HTML version of notebook.
+- reports/ – Final submitted PDF report.
 
-# Pairplot with survival hue
-sns.pairplot(df[['age', 'fare', 'pclass', 'survived']], hue='survived')
-plt.show()
+## 🧠 Objective
 
-# Age distribution
-plt.hist(df['age'].dropna(), bins=30, color='skyblue')
-plt.title("Age Distribution of Passengers")
-plt.xlabel("Age")
-plt.ylabel("Frequency")
-plt.show()
+To analyze the Titanic dataset and extract meaningful insights on survival based on features like sex, age, class, etc.
 
-# Boxplot: Fare by Passenger Class
-sns.boxplot(x='pclass', y='fare', data=df)
-plt.title("Fare Distribution by Passenger Class")
-plt.xlabel("Passenger Class")
-plt.ylabel("Fare")
-plt.show()
+## 📊 Key Steps
 
-# Violinplot: Age by Gender and Survival
-sns.violinplot(data=df, x='sex', y='age', hue='survived', split=True)
-plt.title("Age Distribution by Gender and Survival")
-plt.show()
+1. Data Cleaning
+2. Handling Null Values
+3. Exploratory Data Analysis (EDA)
+4. Visualizations (Seaborn/Matplotlib)
+5. Conclusions
 
-created by:Ankit Kumar Maity
+## 📌 Technologies Used
+
+- Python
+- Pandas
+- Seaborn & Matplotlib
+- Jupyter Notebook
+- Git & GitHub
+
+ created by:Ankit Kumar Maity
